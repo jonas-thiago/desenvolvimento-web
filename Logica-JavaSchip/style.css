@@ -1,0 +1,69 @@
+/* --- Estilos Gerais (para a página toda) --- */
+body {
+    font-family: Arial, sans-serif; /* Uma fonte mais limpa que a padrão */
+    background-color: #4f8a8a;     /* Um cinza bem claro para o fundo */
+    color: #333;                   /* Cor do texto principal (cinza escuro) */
+    margin: 0;                     /* Remove margens padrão do navegador */
+    padding: 20px;                 /* Adiciona um respiro nas bordas da página */
+}
+
+/* --- Container Principal (para centralizar o conteúdo) --- */
+/* Para isso funcionar bem, vamos envolver nosso header e main numa div no HTML */
+.container {
+    max-width: 600px; /* Largura máxima do nosso conteúdo */
+    margin: 0 auto;   /* Truque para centralizar o container na tela */
+    background-color: #ffffff; /* Fundo branco para a área do banco */
+    padding: 30px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* --- Cabeçalho e Títulos --- */
+header {
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 2px solid #e0e0e0; /* Linha sutil para separar */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #0056b3; /* Um tom de azul para o título principal */
+}
+
+h3 {
+    color: #555;
+}
+
+/* Onde aparece "Seu Saldo: R$ ..." */
+#valor-saldo {
+    font-weight: bold; /* Deixa o número do saldo em negrito */
+    color: #10d63e;    /* Cor verde para o saldo */
+}
+
+
+/* --- Lista de Opções (A parte mais legal!) --- */
+main ol {
+    list-style: none; /* Remove as bolinhas ou números da lista */
+    padding: 0;       /* Remove o espaçamento padrão da lista */
+}
+
+/* Estilizando os links para parecerem botões */
+main ol a {
+    display: block; /* Faz o link ocupar a linha inteira, tornando a área clicável maior */
+    background-color: #007bff; /* Cor de fundo azul para os botões */
+    color: #ffffff;            /* Texto branco */
+    padding: 15px;             /* Espaçamento interno */
+    margin-bottom: 10px;       /* Espaço entre os botões */
+    text-decoration: none;     /* Remove o sublinhado do link */
+    text-align: center;        /* Centraliza o texto do botão */
+    border-radius: 5px;        /* Cantos levemente arredondados */
+    transition: background-color 0.3s; /* Animação suave na troca de cor */
+}
+
+
+/* --- Efeito Interativo (ao passar o mouse por cima) --- */
+main ol a:hover {
+    background-color: #0056b3; /* Escurece o botão quando o mouse está sobre ele */
+    cursor: pointer;           /* O cursor vira uma "mãozinha" */
+}
