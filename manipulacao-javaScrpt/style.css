@@ -1,0 +1,85 @@
+/* --- Estilos Gerais --- */
+body {
+    /* Define uma fonte mais moderna e limpa */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #6a7f9e; /* Um fundo cinza bem claro */
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza tudo horizontalmente */
+    justify-content: center; /* Centraliza tudo verticalmente */
+    min-height: 100vh; /* Ocupa a altura inteira da tela */
+    margin: 0;
+}
+
+#titulo {
+    color: #1c1e21; /* Um tom de preto mais suave */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- Estilos da Lista --- */
+ul {
+    list-style-type: none; /* Remove os marcadores (bolinhas) */
+    padding: 0;
+    width: 300px; /* Define uma largura máxima para a lista */
+}
+
+.lista {
+    background-color: #ffffff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra leve */
+}
+
+/* --- Estilos do Contador --- */
+button {
+    font-size: 2rem; /* Tamanho do ícone "+" e "-" */
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Deixa os botões redondos */
+    border: none;
+    color: white;
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    margin: 0 10px; /* Espaçamento entre os botões e o número */
+    
+    /* Alinhamento vertical */
+    display: inline-block;
+    vertical-align: middle;
+
+    /* Efeito de clique */
+    transition: transform 0.1s ease;
+}
+
+/* Efeito ao pressionar o botão */
+button:active {
+    transform: scale(0.95);
+}
+
+#numero {
+    font-size: 3rem; /* Número grande */
+    font-weight: 700;
+    color: #444;
+    padding: 5px 25px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 60px; /* Largura mínima para o número não "pular" */
+    text-align: center;
+    
+    /* Alinhamento vertical */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Cores específicas para os botões */
+#mais {
+    background-color: #28a745; /* Verde */
+}
+
+#menos {
+    background-color: #dc3545; /* Vermelho */
+}
