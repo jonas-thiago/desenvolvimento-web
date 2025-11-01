@@ -1,0 +1,72 @@
+/* --- Estilos Gerais --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #8f8fe8; /* Fundo cinza claro */
+    color: #111;
+    padding: 30px; /* Espaçamento nas laterais */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo */
+}
+
+/* --- Estilo do Input e Botão (Container) --- */
+/* Vamos agrupar o input e o botão para facilitar o alinhamento.
+   Você pode adicionar uma <div> ao redor deles no HTML se quiser,
+   mas por enquanto, vamos estilizar eles diretamente. 
+*/
+
+#input {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Cantos arredondados */
+    margin-right: 8px; /* Espaço entre o input e o botão */
+    outline: none; /* Remove a borda azul ao clicar */
+    transition: border-color 0.2s;
+}
+
+/* Efeito ao focar (clicar) no input */
+#input:focus {
+    border-color: #007bff; /* Azul */
+}
+
+#enviar {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+#enviar:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Efeito ao clicar no botão */
+#enviar:active {
+    transform: scale(0.98);
+}
+
+
+/* --- Estilos da Lista --- */
+#lista {
+    margin-top: 30px; /* Espaço acima da lista */
+    padding-left: 30px; /* Espaço para os números da lista ordenada */
+    width: 300px; /* Largura máxima da lista */
+}
+
+/* Este estilo será aplicado aos <li> que o JavaScript criar 
+*/
+#lista li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
