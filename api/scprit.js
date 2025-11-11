@@ -18,6 +18,7 @@ async function listarDados(){
     let resposta = await fetch(url)
     let body = await resposta.json()
     let lista = document.getElementById('lista')
+
     for (let i=0; i < body.results.length; i++){
         let item = document.createElement('li')
         //item.innerHTML = `${body.results[i].name} - ${body.results[i].species}`
@@ -27,6 +28,23 @@ async function listarDados(){
 }
 
 listarDados()
+
+
+async function Nome() {
+    let resposta = await fetch(url)
+    let body = await resposta.json()
+    let teste = document.getElementById('lista')
+
+    for (let index = 0; index < body.results.length; index++) {
+        let ite = document.createElement('p')
+        let texto = JSON.stringify(`${body.results[index].name} - ${body.results[index].species}`)
+        
+        teste.textContent = texto
+        teste.appendChild(ite)
+    }
+}
+
+//Nome()
 
 
 
