@@ -37,7 +37,8 @@ async function Nome() {
 
     for (let index = 0; index < body.results.length; index++) {
         let ite = document.createElement('p')
-        let texto = JSON.stringify(`${body.results[index].name} - ${body.results[index].species}`)
+        filtragem = `${body.results[index].name} - ${body.results[index].species}`
+        let texto = JSON.stringify(filtragem)
         
         teste.textContent = texto
         teste.appendChild(ite)
