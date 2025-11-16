@@ -7,7 +7,7 @@ async function buscarDados() {
         
     for (let i =0; i < body.results.length; i++) {
         let item = document.createElement('p')
-        item.innerHTML = `${body.results[i].name} - ${body.results[i].species}`
+        item.innerHTML = `${body.results[i].name} - ${body.results[i].gender}`
         conteudo.appendChild(item)
     }
 }
@@ -37,7 +37,7 @@ async function Nome() {
 
     for (let index = 0; index < body.results.length; index++) {
         let ite = document.createElement('li')
-        filtragem = `${body.results[index].name} - ${body.results[index].species}`
+        filtragem = `${body.results[index].name} - ${body.results[index].image}`
         let texto = JSON.stringify(filtragem)
         
         ite.textContent = texto
