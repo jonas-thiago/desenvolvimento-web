@@ -20,7 +20,7 @@ body {
 }
 
 /* --- Container Principal --- */
-#conteudo {
+#conteudo, #conteudo2 {
     width: 100%;
     max-width: 600px; /* Limita a largura para melhor leitura */
     background-color: #3C3E44; /* Um cinza um pouco mais claro */
@@ -30,14 +30,14 @@ body {
 }
 
 /* --- Estilos da Lista (Onde os personagens aparecem) --- */
-#lista {
+#lista, #personagens {
     /*list-style-type: none;  Remove os números (já que é um <ol>) */
     padding: 0;
     margin: 0;
 }
 
 /* --- Estilos dos Itens da Lista (<li>) --- */
-#lista li {
+#lista li, #personagens li {
     background-color: #555; /* Fundo de cada item */
     padding: 15px;
     margin-bottom: 10px; /* Espaço entre os itens */
@@ -53,7 +53,7 @@ body {
 }
 
 /* Efeito ao passar o mouse sobre um item da lista */
-#lista li:hover {
+#lista li:hover, #personagens li:hover {
     background-color: #666;
     transform: scale(1.03); /* Leve "salto" */
     cursor: default;
